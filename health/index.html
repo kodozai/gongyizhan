@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公益站为什么时好时坏、时不时跑路？- 健康度说明 | 公益站导航</title>
+<meta name="description" content="公益站的免费额度从哪来、为什么会突然失效：三类供货来源与稳定性科普，以及本站为何用历史存活曲线判断一个公益站靠不靠谱。">
+<meta name="keywords" content="公益站,ai公益站,claude 公益站,免费 claude api,linux.do 公益站,gpt 公益站,免费 gpt api">
+<link rel="canonical" href="https://gongyizhan.com/health/">
+<meta property="og:title" content="公益站为什么时好时坏、时不时跑路？- 健康度说明 | 公益站导航">
+<meta property="og:description" content="公益站的免费额度从哪来、为什么会突然失效：三类供货来源与稳定性科普，以及本站为何用历史存活曲线判断一个公益站靠不靠谱。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gongyizhan.com/health/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css?v=28783bd262">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://gongyizhan.com/"}, {"@type": "ListItem", "position": 2, "name": "健康度说明", "item": "https://gongyizhan.com/health/"}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="topbar-inner">
+    <a class="brand" href="/"><span class="brand-dot"></span>公益站导航</a>
+    <nav class="site-nav">
+      <a href="/">首页</a>
+      <a href="/timeline/">大事记</a>
+      <a href="/health/">健康度说明</a>
+      <a href="/about/">关于本站</a>
+    </nav>
+  </div>
+</header>
+<div class="promise-strip">本站永不添加任何 aff / 邀请 / 返佣链接</div>
+<main class="wrap">
+
+<section class="about-promise">
+  <h1>公益站为什么时好时坏、时不时跑路？</h1>
+  <p class="hero-sub">公益站的免费额度不是凭空来的。绝大多数公益站的底层，是「订阅逆向 / 号池拼车」——有人把 Claude Max、ChatGPT Pro、Gemini 免费额度、Kiro / 教育号等攒成一个号池，免费放出来给大家用。</p>
+</section>
+
+<section class="about-body">
+  <h2>我们测的是什么</h2>
+  <p>
+    本站每天只做一件事：对每个收录站的首页发一次 GET 请求，看能不能打开。能打开，记为「首页可访问」；打不开（超时、连接失败、4xx/5xx），记为「首页打不开」。
+  </p>
+  <p class="warn-box">
+    <strong>「首页可访问」不代表额度能领、模型能用。</strong>有的站额度已经用尽、按批次限量放号，首页照样打得开；本站不调用任何 API、不注册、不领额度，无法替你确认实际能不能跑通请求。
+  </p>
+  <p>
+    有些站的首页会对自动探测返回 401 / 403（多半是开了防爬或反机器人验证），我们无法判断这类站到底是真的活着还是已经挂了，所以单独标成「⚠ 有防爬，未能确认」，既不算「可访问」也不算「打不开」。
+  </p>
+
+  <h2>三类供货来源与稳定性</h2>
+  <ul>
+    <li>
+      <strong>官方免费额度型</strong>（如 Gemini CLI 每天约 1000 次、Kiro 免费额度、Copilot 教育版）：相对稳定，但厂商促销一旦收紧，整条渠道会集体消失。
+    </li>
+    <li>
+      <strong>订阅号池拼车型</strong>（把 Claude Max / ChatGPT Pro 等订阅逆向成 API 号池）：最不稳定。Anthropic 在 2026 年 1 月、2 月、4 月三次收紧、封禁「用订阅账号 OAuth token 跑第三方工具」，每一次封号潮都会让一批依赖 Claude 订阅号池的公益站集体失效。
+    </li>
+    <li>
+      <strong>混合型</strong>：多来源拼在一起，某一路断供时靠其他路子撑着，表现介于前两者之间。
+    </li>
+  </ul>
+
+  <h2>为什么本站更看重「历史存活曲线」</h2>
+  <p>
+    正因为底层这么脆弱，一个公益站「送多少额度」不重要，能不能长期用才重要。本站每天探测、保留历史存活曲线——一个站的首页连续可访问多少天、历史失效过几次，才是判断它靠不靠谱的最有用信息。
+  </p>
+  <p>
+    你在站点详情页看到的「健康度」区块（累计监测天数、可访问率、当前连续可访问天数、历史失效次数），全部来自本站每日探测的原始记录，测的仍然是「首页能不能打开」，不掺杂任何主观判断，也不代表额度或模型可用。
+  </p>
+
+  <h2>免责声明</h2>
+  <p class="warn-box">
+    本页只讲行业普遍机理，不针对、不指控本站收录的任何具体站点使用了何种来源；各站真实供货方式以站长公示为准。
+  </p>
+
+  <h2>来源说明</h2>
+  <p>整理自公开的订阅逆向工具生态（Sub2API 等号池管理工具）与 Anthropic 2026 年封禁时间线公开报道。</p>
+
+  <h2>社区投票判失效是怎么算的？</h2>
+  <p>
+    每个站点详情页都有「这个站现在还能用吗？」投票区，任何人都可以点「还能用」或「失效了」反馈真实使用体验——
+    这是独立于本站每日机器探测的第二条信号，两者并排展示，互不覆盖：机器探测测的是「首页能不能打开」，
+    社区投票反映的是「实际调用体验」，比如额度用尽、封号、限流这类探测打不出来的情况。
+  </p>
+  <ul>
+    <li>统计窗口：只看最近 <strong>7 天</strong>内的投票，超过 7 天的旧票自动不计入。</li>
+    <li>标记门槛：近 7 天该站投票数达到 <strong>5 票</strong>以上、且「失效了」占比达到 <strong>60%</strong>，才会标出「社区反馈失效」徽章；票数不够时无论比例多高都不标记，避免个别人刷票就判死刑。</li>
+    <li>投票限制：每人（按访客设备+IP 判定）对同一个站每个自然日（北京时间）只能投 1 票，防止刷票。</li>
+  </ul>
+  <p class="warn-box">「社区反馈失效」只是一条参考信号，不代表本站认定该站已下架；是否继续使用、是否还在收录名单里，仍以本站每日探测结果和 <a href="/timeline/">大事记</a> 为准。</p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-promise">本站永不添加任何 aff / 邀请 / 返佣链接</p>
+    <p class="footer-note">公益站导航 · 每日存活探测 · <a href="/about/">关于本站</a> · <a href="/timeline/">大事记</a> · <a href="/audit/">出站链接审计</a> · <a href="/feedback/">反馈</a></p>
+  </div>
+</footer>
+<script src="/static/votes.js?v=6480ec08d7"></script>
+</body>
+</html>
