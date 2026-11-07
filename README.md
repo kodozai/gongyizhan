@@ -1,48 +1,48 @@
-# 公益站导航 - 镜像备份
+# Hayır Amaçlı Siteler Dizini - Ayna Yedeği
 
-公益站导航 (gongyizhan.com) 的本地镜像备份。
+Hayır amaçlı siteler dizini (gongyizhan.com) için yerel ayna yedeği.
 
-## 结构
+## Yapı
 
 ```
 gongyizhan/
-├── index.html          # 首页
-├── sitemap.json        # 站点地图（76 URL）
+├── index.html          # Ana sayfa
+├── sitemap.json        # Site haritası (76 URL)
 ├── static/
-│   ├── style.css       # 样式表
-│   ├── votes.js        # 投票脚本
-│   └── feedback.js     # 反馈脚本
+│   ├── style.css       # Stil dosyası
+│   ├── votes.js        # Oylama betiği
+│   └── feedback.js     # Geri bildirim betiği
 ├── timeline/
-│   └── index.html      # 大事记
+│   └── index.html      # Zaman çizelgesi
 ├── about/
-│   └── index.html      # 关于本站
+│   └── index.html      # Bu site hakkında
 ├── health/
-│   └── index.html      # 健康度说明
+│   └── index.html      # Sağlık durumu açıklaması
 ├── audit/
-│   └── index.html      # 出站链接审计
+│   └── index.html      # Giden bağlantı denetimi
 ├── feedback/
-│   └── index.html      # 反馈表单
+│   └── index.html      # Geri bildirim formu
 ├── topic/
 │   ├── free-claude/
-│   │   └── index.html  # 免费 Claude API 公益站
+│   │   └── index.html  # Ücretsiz Claude API sunan hayır amaçlı siteler
 │   ├── free-codex/
-│   │   └── index.html  # 免费 Codex API 公益站
+│   │   └── index.html  # Ücretsiz Codex API sunan hayır amaçlı siteler
 │   └── checkin/
-│       └── index.html  # 签到送额度
+│       └── index.html  # Giriş yaparak kredi kazanma
 └── site/
     ├── muyuan/         # 君の公益
     ├── hybgzs/         # 黑与白公益站
-    ├── free-v36/       # 免费 ChatGPT API
-    └── ... (67个站点)
+    ├── free-v36/       # Ücretsiz ChatGPT API
+    └── ... (67 site)
 ```
 
-## 用途
+## Kullanım
 
-- 离线浏览公益站列表
-- 查看各站历史存活记录
-- 参考公益站信息
+- Hayır amaçlı sitelerin listesini çevrimdışı görüntüleme
+- Sitelerin geçmişteki erişilebilirlik kayıtlarını inceleme
+- Hayır amaçlı site bilgilerine başvurma
 
-## 来源
+## Kaynak
 
-原始网站：https://gongyizhan.com
-最后抓取时间：2026-10-27
+Orijinal site: https://gongyizhan.com  
+Son arşivleme tarihi: 2026-10-27
